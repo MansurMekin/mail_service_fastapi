@@ -1,0 +1,6 @@
+MAIL_HOST=yourvalue
+MAIL_USERNAME=yourvalue
+MAIL_PASSWORD=yourvalue
+MAIL_PORT=587
+
+APP_PORT=8000

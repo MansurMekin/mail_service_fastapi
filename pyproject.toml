@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "Mailer"
+version = "0.1.0"
+description = ""
+authors = ["..."]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.97.0"
+pydantic = "^1.10.9"
+python-dotenv = "^1.0.0"
+orjson = "^3.9.1"
+uvicorn = "^0.22.0"
+aiosmtplib = "^2.0.2"
+structlog = "^23.1.0"
+
+[tool.poetry.group.dev]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+httpx = "^0.24.1"
+pre-commit = "^3.3.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

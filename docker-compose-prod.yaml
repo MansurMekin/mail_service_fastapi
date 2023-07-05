@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: fastapi-app-prod
+    restart: on-failure
+    ports:
+      - "${APP_PORT}:8000"
+    env_file:
+      - .env
+    networks:
+      custom-network-prod:
+
+networks:
+  custom-network-prod:
+    driver: bridge
