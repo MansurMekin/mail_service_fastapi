@@ -19,7 +19,7 @@ cp .envexample .env
 3.Run the "make up" command for start project
 
 ```
-make up
+make up-prod
 ```
 
 4.For tests run the "make up-tests" command
